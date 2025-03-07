@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { Brain, Target, Zap, Users, Award, Star, Timer, Gift, ImageIcon, Settings } from 'lucide-react';
+import { Brain, Target, Zap, Users, Award, Star, Timer, Gift, ImageIcon, Settings, HelpCircle } from 'lucide-react';
+import TriviaImage from './TriviaImage';
 
 const Features: React.FC = () => {
   const features = [
@@ -64,6 +65,24 @@ const Features: React.FC = () => {
           <p className="text-gray-300 max-w-3xl mx-auto mt-6 text-lg">
             Discover all the exciting features that make Trivia Night GPT the ultimate AI-powered trivia experience!
           </p>
+        </div>
+
+        <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
+          <div className="w-full md:w-1/2">
+            <TriviaImage className="w-full max-w-md mx-auto" size={128} />
+          </div>
+          <div className="w-full md:w-1/2">
+            <h3 className="text-2xl font-orbitron font-bold mb-4 text-white flex items-center gap-2">
+              The Ultimate Trivia Experience <HelpCircle className="text-neon-pink" size={24} />
+            </h3>
+            <p className="text-lg text-gray-300 mb-6">
+              Trivia Night GPT brings the excitement of trivia night to your screen with AI-powered questions across multiple categories and difficulty levels. Challenge yourself, friends, and family to see who knows the most!
+            </p>
+            <div className="flex items-center gap-3 text-neon-blue">
+              <HelpCircle size={20} />
+              <span>Thousands of unique trivia questions</span>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">

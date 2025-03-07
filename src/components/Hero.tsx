@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { HelpCircle } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -12,8 +13,9 @@ const Hero = () => {
             <span className="neon-text-blue">Trivia Night</span> <span className="neon-text-purple">GPT</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-300 mb-8">
+          <p className="text-xl md:text-2xl text-gray-300 mb-8 flex items-center justify-center gap-2">
             Bringing Friends & Families Together with the Power of AI Trivia!
+            <HelpCircle className="text-neon-pink animate-pulse-glow" size={24} />
           </p>
           
           <div className="space-y-4 md:space-y-0 md:space-x-4 md:flex mb-12">
@@ -33,7 +35,7 @@ const Hero = () => {
           <div className="glass-panel p-6 md:p-8 max-w-2xl">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
               <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-neon-purple flex-shrink-0 bg-gradient-to-br from-neon-blue/20 to-neon-purple/20 flex items-center justify-center">
-                <span className="text-5xl">🎮</span>
+                <HelpCircle className="text-neon-purple" size={64} />
               </div>
               <div className="text-left">
                 <h3 className="text-xl md:text-2xl font-bold mb-2">The Ultimate Trivia Experience!</h3>
