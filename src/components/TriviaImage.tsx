@@ -13,7 +13,7 @@ const TriviaImage: React.FC<TriviaImageProps> = ({ className = "", size = 64, sh
     <div className={`bg-gradient-to-br from-neon-blue/20 to-neon-purple/20 rounded-full p-4 flex items-center justify-center ${className}`}>
       {showImage ? (
         <img 
-          src="/lovable-uploads/9bddddf9-1959-40d7-b4f5-05523a61c3ad.png" 
+          src="https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/trivanight.jpg/:/cr=t:5.43%25,l:0%25,w:100%25,h:89.13%25/rs=w:600,h:300,cg:true/qt=q:22" 
           alt="Trivia Night" 
           className="w-full h-full object-cover rounded-full"
           onError={(e) => {
