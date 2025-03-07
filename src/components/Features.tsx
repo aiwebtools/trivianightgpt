@@ -72,7 +72,6 @@ const Features: React.FC = () => {
               key={index} 
               className="glass-panel p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(45,226,230,0.15)] group"
               style={{ 
-                animationDelay: `${index * 0.1}s`,
                 opacity: 0,
                 animation: 'fade-in 0.5s ease-out forwards',
                 animationDelay: `${0.1 + index * 0.1}s`
