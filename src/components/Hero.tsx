@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { HelpCircle } from 'lucide-react';
+import TriviaImage from './TriviaImage';
 
 const Hero = () => {
   return (
@@ -34,8 +35,8 @@ const Hero = () => {
           
           <div className="glass-panel p-6 md:p-8 max-w-2xl">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
-              <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-neon-purple flex-shrink-0 bg-gradient-to-br from-neon-blue/20 to-neon-purple/20 flex items-center justify-center">
-                <HelpCircle className="text-neon-purple" size={64} />
+              <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-neon-purple flex-shrink-0">
+                <TriviaImage size={64} showImage={true} className="w-full h-full" />
               </div>
               <div className="text-left">
                 <h3 className="text-xl md:text-2xl font-bold mb-2">The Ultimate Trivia Experience!</h3>

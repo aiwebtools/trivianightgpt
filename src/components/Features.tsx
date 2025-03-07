@@ -69,7 +69,7 @@ const Features: React.FC = () => {
 
         <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
           <div className="w-full md:w-1/2">
-            <TriviaImage className="w-full max-w-md mx-auto" size={128} />
+            <TriviaImage className="w-full max-w-md mx-auto" size={128} showImage={true} />
           </div>
           <div className="w-full md:w-1/2">
             <h3 className="text-2xl font-orbitron font-bold mb-4 text-white flex items-center gap-2">
