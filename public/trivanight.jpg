@@ -1,0 +1,4 @@
+
+<!-- This is a placeholder for the binary image file -->
+<!-- The actual image will be stored at this location, but we can't directly write the binary content here -->
+<!-- In Lovable, the image should be uploaded separately and referenced from this path -->
