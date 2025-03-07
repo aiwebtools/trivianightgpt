@@ -33,7 +33,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#disclaimer" className="text-gray-400 hover:text-neon-blue transition-colors">
-                  Disclaimer
+                  Legal Disclaimer
                 </a>
               </li>
               <li>
@@ -73,6 +73,14 @@ const Footer = () => {
                   Terms of Service <ExternalLink size={14} className="ml-1" />
                 </a>
               </li>
+              <li>
+                <a 
+                  href="#disclaimer" 
+                  className="text-gray-400 hover:text-neon-blue transition-colors flex items-center"
+                >
+                  Legal Disclaimer
+                </a>
+              </li>
             </ul>
           </div>
           
@@ -94,6 +102,14 @@ const Footer = () => {
                   className="text-gray-400 hover:text-neon-blue transition-colors flex items-center"
                 >
                   <Mail size={16} className="mr-2" /> Contact@ai-webtools.com
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#disclaimer" 
+                  className="text-gray-400 hover:text-neon-blue transition-colors flex items-center"
+                >
+                  Legal Disclaimer
                 </a>
               </li>
             </ul>
