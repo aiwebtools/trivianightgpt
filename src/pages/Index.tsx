@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
@@ -9,6 +8,7 @@ import FAQ from '../components/FAQ';
 import Disclaimer from '../components/Disclaimer';
 import Footer from '../components/Footer';
 import FloatingElements from '../components/FloatingElements';
+import DisclaimerPopup from '../components/DisclaimerPopup';
 
 const Index = () => {
   useEffect(() => {
@@ -64,6 +64,9 @@ const Index = () => {
     <div className="min-h-screen bg-dark text-white overflow-hidden">
       {/* Background floating elements */}
       <FloatingElements />
+      
+      {/* Disclaimer Popup */}
+      <DisclaimerPopup />
       
       {/* Main Content */}
       <Header />
