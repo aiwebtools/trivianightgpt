@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { HelpCircle } from 'lucide-react';
 import TriviaImage from './TriviaImage';
@@ -20,11 +19,13 @@ const Hero = () => {
           </p>
           
           <div className="space-y-4 md:space-y-0 md:space-x-4 md:flex mb-12">
-            <Link to="/play">
+            <a href="https://chatgpt.com/g/g-67bb8a70f09481918b72fb813a67a82c-trivia-night-gpt" 
+               target="_blank" 
+               rel="noopener noreferrer">
               <Button className="neon-button bg-gradient-to-r from-neon-blue to-neon-purple text-white text-lg px-8 py-6">
                 PLAY TRIVIA NIGHT GPT NOW
               </Button>
-            </Link>
+            </a>
             
             <a href="#features">
               <Button variant="outline" className="border-neon-blue text-neon-blue hover:bg-neon-blue/10 text-lg px-8 py-6">

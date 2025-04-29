@@ -31,12 +31,14 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link 
-              to="/play" 
+            <a 
+              href="https://chatgpt.com/g/g-67bb8a70f09481918b72fb813a67a82c-trivia-night-gpt" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="text-white hover:text-neon-blue transition-colors font-medium"
             >
               PLAY TRIVIA NIGHT GPT NOW
-            </Link>
+            </a>
             <a 
               href="#faq" 
               className="text-white hover:text-neon-blue transition-colors"
@@ -73,13 +75,15 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden glass-panel border-t border-white/10">
           <nav className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            <Link 
-              to="/play" 
+            <a 
+              href="https://chatgpt.com/g/g-67bb8a70f09481918b72fb813a67a82c-trivia-night-gpt" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="text-white hover:text-neon-blue transition-colors font-medium py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               PLAY TRIVIA NIGHT GPT NOW
-            </Link>
+            </a>
             <a 
               href="#faq" 
               className="text-white hover:text-neon-blue transition-colors py-2"
