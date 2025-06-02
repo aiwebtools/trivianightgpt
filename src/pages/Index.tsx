@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
@@ -61,7 +62,11 @@ const Index = () => {
   }, []);
   
   return (
-    <div className="min-h-screen bg-dark text-white overflow-hidden">
+    <div className="min-h-screen bg-dark text-white overflow-hidden relative">
+      {/* Divine background effects */}
+      <div className="fixed inset-0 bg-gradient-to-br from-purple-900/10 via-blue-900/10 to-pink-900/10 animate-pulse-glow"></div>
+      <div className="fixed inset-0 bg-cyber-grid opacity-5"></div>
+      
       {/* Background floating elements */}
       <FloatingElements />
       
@@ -69,16 +74,26 @@ const Index = () => {
       <DisclaimerPopup />
       
       {/* Main Content */}
-      <Header />
-      <main>
-        <Hero />
-        <Features />
-        <HowItWorks />
-        <Testimonials />
-        <FAQ />
-        <Disclaimer />
-      </main>
-      <Footer />
+      <div className="relative z-10">
+        <Header />
+        <main>
+          <Hero />
+          <Features />
+          <HowItWorks />
+          <Testimonials />
+          <FAQ />
+          <Disclaimer />
+        </main>
+        <Footer />
+      </div>
+      
+      {/* Divine ambient lighting */}
+      <div className="fixed top-0 left-0 w-full h-full pointer-events-none z-0">
+        <div className="absolute top-10 left-10 w-96 h-96 bg-neon-blue/5 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute top-1/4 right-10 w-80 h-80 bg-neon-purple/5 rounded-full blur-3xl animate-float-delay-1"></div>
+        <div className="absolute bottom-20 left-1/4 w-72 h-72 bg-neon-pink/5 rounded-full blur-3xl animate-float-delay-2"></div>
+        <div className="absolute bottom-10 right-1/4 w-64 h-64 bg-neon-yellow/5 rounded-full blur-3xl animate-float"></div>
+      </div>
     </div>
   );
 };
