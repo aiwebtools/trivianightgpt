@@ -63,6 +63,40 @@ const Index = () => {
   
   return (
     <div className="min-h-screen bg-dark text-white overflow-hidden relative">
+      {/* SEO-friendly structured content */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Free AI Tools - Trivia Night GPT",
+          "description": "Access the best free AI tools including Trivia Night GPT - an AI-powered trivia game with multiple categories and difficulty levels.",
+          "url": "https://aiwebtools.ai/",
+          "mainEntity": {
+            "@type": "SoftwareApplication",
+            "name": "Trivia Night GPT",
+            "applicationCategory": "GameApplication",
+            "operatingSystem": "Web Browser"
+          },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "AI Web Tools",
+                "item": "https://aiwebtools.ai/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Trivia Night GPT",
+                "item": "https://aiwebtools.ai/#hero"
+              }
+            ]
+          }
+        })}
+      </script>
+
       {/* Divine background effects */}
       <div className="fixed inset-0 bg-gradient-to-br from-purple-900/10 via-blue-900/10 to-pink-900/10 animate-pulse-glow"></div>
       <div className="fixed inset-0 bg-cyber-grid opacity-5"></div>
@@ -73,10 +107,10 @@ const Index = () => {
       {/* Disclaimer Popup */}
       <DisclaimerPopup />
       
-      {/* Main Content */}
+      {/* Main Content with Semantic HTML */}
       <div className="relative z-10">
         <Header />
-        <main>
+        <main role="main">
           <Hero />
           <Features />
           <HowItWorks />
