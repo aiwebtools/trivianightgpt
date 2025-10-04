@@ -100,7 +100,6 @@
       0 0 10px rgba(59, 130, 246, 0.6),
       0 0 15px rgba(59, 130, 246, 0.4),
       0 0 20px rgba(59, 130, 246, 0.2);
-    animation: neon-flicker 4s ease-in-out infinite alternate;
   }
   
   .neon-text-purple {
@@ -110,7 +109,6 @@
       0 0 10px rgba(168, 85, 247, 0.6),
       0 0 15px rgba(168, 85, 247, 0.4),
       0 0 20px rgba(168, 85, 247, 0.2);
-    animation: neon-flicker 3s ease-in-out infinite alternate;
   }
   
   .neon-text-pink {
@@ -120,7 +118,6 @@
       0 0 10px rgba(236, 72, 153, 0.6),
       0 0 15px rgba(236, 72, 153, 0.4),
       0 0 20px rgba(236, 72, 153, 0.2);
-    animation: neon-flicker 5s ease-in-out infinite alternate;
   }
   
   .neon-text-yellow {
@@ -130,7 +127,6 @@
       0 0 10px rgba(253, 224, 71, 0.6),
       0 0 15px rgba(253, 224, 71, 0.4),
       0 0 20px rgba(253, 224, 71, 0.2);
-    animation: neon-flicker 3.5s ease-in-out infinite alternate;
   }
   
   .neon-text-green {
@@ -140,7 +136,6 @@
       0 0 10px rgba(34, 197, 94, 0.6),
       0 0 15px rgba(34, 197, 94, 0.4),
       0 0 20px rgba(34, 197, 94, 0.2);
-    animation: neon-flicker 4.5s ease-in-out infinite alternate;
   }
   
   .neon-button {
@@ -173,7 +168,6 @@
     box-shadow: 
       0 8px 32px rgba(0, 0, 0, 0.3),
       inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    animation: glass-shimmer 6s ease-in-out infinite;
   }
   
   .bg-cyber-grid {
@@ -226,7 +220,9 @@
 }
 
 .animate-pulse-glow {
-  animation: divine-pulse-glow 4s ease-in-out infinite;
+  filter: 
+    drop-shadow(0 0 10px rgba(59, 130, 246, 0.6))
+    drop-shadow(0 0 20px rgba(168, 85, 247, 0.4));
 }
 
 .animate-fade-in {
@@ -235,7 +231,10 @@
 }
 
 .animate-neon-pulse {
-  animation: neon-text-pulse 3s ease-in-out infinite;
+  text-shadow: 
+    0 0 10px rgba(45, 226, 230, 0.8), 
+    0 0 20px rgba(45, 226, 230, 0.6), 
+    0 0 30px rgba(45, 226, 230, 0.4);
 }
 
 @keyframes divine-gradient {
