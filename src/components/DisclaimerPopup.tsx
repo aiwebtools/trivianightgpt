@@ -27,11 +27,11 @@ const DisclaimerPopup = () => {
     localStorage.setItem('disclaimerAccepted', 'true');
     setIsOpen(false);
     
-    // Show toast notification
+    // Show brief toast notification
     toast({
-      title: "Welcome to Trivia Night!",
-      description: "Thanks for accepting our terms. Enjoy the game!",
-      duration: 5000,
+      title: "Welcome!",
+      description: "Thanks for accepting. Enjoy the game!",
+      duration: 2000,
     });
   };
 
