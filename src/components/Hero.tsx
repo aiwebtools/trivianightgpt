@@ -40,7 +40,7 @@ const Hero = () => {
           <article className="glass-panel p-6 md:p-8 max-w-2xl">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
               <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-neon-purple flex-shrink-0">
-                <TriviaImage size={64} showImage={true} className="w-full h-full" alt="Trivia Night GPT AI Game Interface" />
+                <TriviaImage size={64} showImage={true} className="w-full h-full" />
               </div>
               <div className="text-left">
                 <h2 className="text-xl md:text-2xl font-bold mb-2">The Ultimate AI Trivia Experience!</h2>
