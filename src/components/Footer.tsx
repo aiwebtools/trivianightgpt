@@ -130,7 +130,7 @@ const Footer = () => {
         <div className="mt-16 pt-8 border-t border-gradient-to-r from-neon-blue/30 via-neon-purple/30 to-neon-pink/30 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
             <a 
-              href="https://www.aiwebtools.ai" 
+              href="https://aiwebtools.lovable.app/?via=aiwebtools" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-neon-blue transition-all duration-300"
