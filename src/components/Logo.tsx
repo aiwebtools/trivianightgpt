@@ -47,7 +47,7 @@ const Logo: React.FC<LogoProps> = ({ size = 'md', showTagline = true }) => {
         </h2>
         {showTagline && (
           <p className={`text-gray-400 leading-tight ${sizes[size].tagline}`}>
-            Presented by <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="text-neon-purple hover:text-neon-pink transition-colors">AiWebTools.Ai</a>
+            Presented by <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="text-neon-purple hover:text-neon-pink transition-colors">AiWebTools.Ai</a>
           </p>
         )}
       </div>
