@@ -141,10 +141,10 @@ const Footer = () => {
           
           <div className="mt-6 md:mt-0">
             <a 
-              href="https://www.aiwebtools.ai" 
+              href="https://aiwebtools.lovable.app/?via=aiwebtools" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="inline-block px-8 py-3 bg-gradient-to-r from-neon-blue/30 to-neon-purple/30 
+              className="inline-block px-8 py-3 bg-gradient-to-r from-neon-blue/30 to-neon-purple/30
                 rounded-full border border-neon-blue/50 text-white hover:from-neon-blue/50 
                 hover:to-neon-purple/50 transition-all duration-300 shadow-lg hover:shadow-neon-blue/50 transform hover:scale-105"
             >
